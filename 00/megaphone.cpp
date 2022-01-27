@@ -11,10 +11,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-// Copyright 2022 Caio Souza
-
 #include <iostream>
-#include <string>
 
 int main(int argc, char **argv) {
     (void)argc;
