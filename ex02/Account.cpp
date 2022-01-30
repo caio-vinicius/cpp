@@ -66,7 +66,7 @@ Account::~Account(void) {
 void Account::displayAccountsInfos(void) {
     Account::_displayTimestamp();
     std::cout << \
-        "account:" << getNbAccounts() << ";" \
+        "accounts:" << getNbAccounts() << ";" \
         "total:" << getTotalAmount() << ";" \
         "deposits:" << getNbDeposits() << ";" \
         "withdrawals:" << getNbWithdrawals() << ";" << std::endl;

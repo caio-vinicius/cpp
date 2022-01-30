@@ -14,6 +14,6 @@ int main(int argc, char **argv) {
     } else {
         voice = "* LOUD AND UNBEARABLE FEEDBACK NOISE *";
     }
-    std::cout << voice;
+    std::cout << voice << std::endl;
     return (0);
 }
