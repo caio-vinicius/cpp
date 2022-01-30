@@ -1,23 +1,16 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   PhoneBook.cpp                                      :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: csouza-f <caio@42sp.org.br>                +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/01/27 21:25:34 by csouza-f          #+#    #+#             */
-/*   Updated: 2022/01/29 20:46:48 by csouza-f         ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
+/* Copyright (c) 2022 Caio Souza. All rights reserved. */
+/* 42 */
 
 #include <iostream>
 #include <iomanip>
+#include <string>
 
 #include "PhoneBook.hpp"
 
-void    phonebook_usage(void)
-{
-    std::cout << "\nUsage:\n\nHELP\tDisplay this output message\nADD\tAdd a new contact\nSEARCH\tDisplay all contacts" << std::endl;
+void    phonebook_usage(void) {
+    std::cout << std::endl << "Usage:\n\nHELP\tDisplay this output message" << \
+    std::endl << "ADD\tAdd a new contact" << std::endl << \
+    "SEARCH\tDisplay all contacts" << std::endl;
 }
 
 int main(void) {
@@ -26,7 +19,8 @@ int main(void) {
     unsigned int i;
 
     i = 0;
-    std::cout << "Welcome to Phonebook. To view available commands, type HELP." << std::endl;
+    std::cout << \
+    "Welcome to Phonebook. To view available commands, type HELP." << std::endl;
     while (std::cout << "Phonebook> " && std::getline(std::cin, input)) {
         if (input == "HELP" || input == "help") {
             phonebook_usage();
@@ -34,8 +28,9 @@ int main(void) {
             phonebook.add_contact();
         } else if (input == "SEARCH" || input == "search") {
             phonebook.search_contact();
-        } else if (input == "EXIT" || input == "exit" || input == "quit" || input == "e" || input == "q") {
-            break ; 
+        } else if (input == "EXIT" || input == "exit" || input == "quit" || \
+                    input == "e" || input == "q") {
+            break;
         } else {
             std::cout << "Error: Command not found." << std::endl;
             i++;
@@ -43,7 +38,7 @@ int main(void) {
                 i = 0;
                 phonebook_usage();
             }
-            continue ;
+            continue;
         }
         i = 0;
     }
