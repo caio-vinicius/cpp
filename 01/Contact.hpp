@@ -6,7 +6,7 @@
 /*   By: csouza-f <caio@42sp.org.br>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/27 21:53:19 by csouza-f          #+#    #+#             */
-/*   Updated: 2022/01/29 11:54:21 by csouza-f         ###   ########.fr       */
+/*   Updated: 2022/01/29 17:45:22 by csouza-f         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,11 +27,9 @@ class Contact {
             darkest_secret = _darkest_secret;
         }
         Contact() {};
-    private:
         std::string first_name;
         std::string last_name;
         std::string nickname;
         std::string phone_number;
         std::string darkest_secret;
-    friend class PhoneBook;
 };

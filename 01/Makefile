@@ -6,14 +6,14 @@
 #    By: csouza-f <caio@42sp.org.br>                +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/01/20 23:40:44 by csouza-f          #+#    #+#              #
-#    Updated: 2022/01/25 23:25:28 by csouza-f         ###   ########.fr        #
+#    Updated: 2022/01/29 21:43:37 by csouza-f         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = megaphone
+NAME = phonebook
 
 SOURCES = ./
-SOURCES_FILES = megaphone.cpp
+SOURCES_FILES = PhoneBook.cpp
 SOURCES_FILES_FULL = $(addprefix $(SOURCES)/,$(SOURCES_FILES))
 
 OBJECTS = ./objects
